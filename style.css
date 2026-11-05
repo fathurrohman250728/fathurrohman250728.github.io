@@ -1,162 +1,8 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f7f6;
-    color: #263746;
-}
-
-header {
-    background: #123047;
-    color: white;
-    padding: 20px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-header h2 {
-    color: #80dfc0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #80dfc0;
-}
-
-.hero {
-    background: linear-gradient(120deg, #123047, #168b83);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 13px 25px;
-    background: #80dfc0;
-    color: #123047;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background: white;
-}
-
-.content {
-    padding: 60px 7%;
-    text-align: center;
-}
-
-.content h2 {
-    color: #123047;
-    margin-bottom: 20px;
-}
-
-.content p {
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 35px;
-}
-
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-.card h3 {
-    color: #168b83;
-    margin-bottom: 15px;
-}
-
-.card a {
-    display: inline-block;
-    color: #168b83;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-footer {
-    background: #123047;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-@media (max-width: 700px) {
-    header {
-        flex-direction: column;
-    }
-
-    nav {
-        text-align: center;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-}    
-
-/* GALERI SEKOLAH */
-
 .gallery {
     padding: 60px 7%;
     text-align: center;
     background: #f4f7f6;
-}
-
-.gallery h2 {
-    color: #123047;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.gallery > p {
-    color: #555;
-    margin-bottom: 35px;
 }
 
 .gallery-container {
@@ -169,12 +15,7 @@ footer {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.gallery-card:hover {
-    transform: translateY(-8px);
+    box-shadow: 0 5px 15px #0002;
 }
 
 .gallery-card img {
@@ -186,18 +27,15 @@ footer {
 
 .gallery-card h3 {
     color: #168b83;
-    margin: 18px 10px 8px;
+    padding: 10px;
 }
 
 .gallery-card p {
     padding: 0 15px 20px;
-    color: #555;
 }
 
-/* Tampilan HP */
-@media (max-width: 700px) {
+@media(max-width:700px) {
     .gallery-container {
         grid-template-columns: 1fr;
     }
 }
-
