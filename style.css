@@ -1,0 +1,171 @@
+:root {
+  --indigo: #1b2a57;
+  --hijau: #0f7b6c;
+  --kunyit: #e5a823;
+  --kertas: #f6f7fb;
+  --tinta: #1a1d2e;
+  --garis: #d9dcea;
+  --putih: #ffffff;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--kertas);
+  color: var(--tinta);
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+h1, h2, .brand {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  line-height: 1.15;
+  color: var(--indigo);
+}
+
+a { color: var(--hijau); }
+a:focus-visible, .tombol:focus-visible, .wa:focus-visible {
+  outline: 3px solid var(--kunyit);
+  outline-offset: 3px;
+}
+
+/* Header */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 0.9rem clamp(1rem, 5vw, 3rem);
+  background: var(--indigo);
+  border-bottom: 4px solid var(--kunyit);
+}
+.brand {
+  color: var(--putih);
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+nav a {
+  color: #dfe3f5;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover { color: var(--putih); }
+nav a[aria-current="page"] {
+  color: var(--putih);
+  border-bottom-color: var(--kunyit);
+}
+
+/* Halaman */
+main { max-width: 68rem; margin: 0 auto; padding: 2.5rem clamp(1rem, 5vw, 3rem) 5rem; }
+.halaman h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin: 0 0 0.75rem; }
+.lead { font-size: 1.2rem; max-width: 42rem; margin: 0 0 2rem; }
+.sub { font-size: 1.4rem; margin: 2.5rem 0 0.75rem; }
+
+/* Beranda */
+.hero { padding: 2rem 0 3rem; max-width: 46rem; }
+.hero h1 { font-size: clamp(2.4rem, 7vw, 4.2rem); }
+.hero p { font-size: 1.25rem; max-width: 38rem; }
+.aksi { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+.tombol {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  background: var(--hijau);
+  color: var(--putih);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.tombol:hover { background: #0b6256; }
+.tombol-lain { background: transparent; color: var(--indigo); box-shadow: inset 0 0 0 2px var(--indigo); }
+.tombol-lain:hover { background: var(--indigo); color: var(--putih); }
+
+/* Kolom kartu */
+.kolom3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.25rem; }
+.kolom3 article {
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-top: 4px solid var(--hijau);
+  border-radius: 6px;
+  padding: 1.4rem;
+}
+.kolom3 h2 { font-size: 1.25rem; margin: 0 0 0.5rem; }
+.kolom3 p { margin: 0 0 0.75rem; }
+
+/* Daftar */
+.daftar { padding-left: 1.25rem; max-width: 40rem; }
+.daftar li { margin-bottom: 0.4rem; }
+
+/* Sejarah: urutan waktu */
+.lini { list-style: none; margin: 0; padding: 0 0 0 1.5rem; border-left: 3px solid var(--kunyit); max-width: 42rem; }
+.lini li { position: relative; padding: 0 0 1.75rem 1rem; }
+.lini li::before {
+  content: "";
+  position: absolute;
+  left: -2.15rem;
+  top: 0.45rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  background: var(--indigo);
+  border: 3px solid var(--kertas);
+  border-radius: 50%;
+}
+.lini strong { display: block; font-family: "Bricolage Grotesque", sans-serif; font-size: 1.2rem; color: var(--indigo); }
+
+/* Prinsip */
+.prinsip { max-width: 44rem; margin: 0; }
+.prinsip dt {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--indigo);
+  margin-top: 1.5rem;
+}
+.prinsip dd { margin: 0.2rem 0 0; padding-bottom: 1.25rem; border-bottom: 1px solid var(--garis); }
+
+/* Pemrograman */
+.dua { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 2rem; align-items: start; }
+.dua .sub { margin-top: 0; }
+.kode {
+  margin: 0;
+  padding: 1.25rem;
+  background: var(--indigo);
+  color: #e9ecfa;
+  border-left: 5px solid var(--kunyit);
+  border-radius: 6px;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.95rem;
+  overflow-x: auto;
+}
+
+/* Footer dan tombol WhatsApp */
+footer { text-align: center; padding: 2rem 1rem 5rem; border-top: 1px solid var(--garis); color: #4b5068; }
+.wa {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 20;
+  padding: 0.75rem 1.1rem;
+  background: #1fa855;
+  color: var(--putih);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+.wa:hover { background: #178a45; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
