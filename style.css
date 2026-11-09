@@ -1,42 +1,176 @@
 
-/* GAMBAR PADA KARTU BERANDA */
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(20, 33, 61, 0.08);
-    transition: 0.3s;
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    margin-bottom: 18px;
-}
-
-.card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 30px rgba(20, 33, 61, 0.15);
-}
-
-.card h3 {
-    color: #2864dc;
-    margin-bottom: 12px;
-}
-
-.card p {
-    color: #68758b;
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5ff;
+    color: #26334d;
     line-height: 1.7;
 }
 
-.card a {
+/* HEADER */
+header {
+    background: #14213d;
+    color: white;
+    padding: 20px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    color: #42d5e8;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #2878e5;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(120deg, #14213d, #2457d6, #20b9c7);
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.tombol {
     display: inline-block;
-    margin-top: 15px;
-    color: #2864dc;
+    background: #42d5e8;
+    color: #14213d;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* KONTEN */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 25px;
+    text-align: center;
+}
+
+.container h2 {
+    color: #2457d6;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.container h3 {
+    color: #14213d;
+    margin: 25px 0 10px;
+}
+
+.container p {
+    margin-bottom: 20px;
+    color: #58657b;
+}
+
+/* GALERI FOTO */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.galeri img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.galeri img:hover {
+    transform: scale(1.04);
+}
+
+/* FOOTER */
+footer {
+    background: #14213d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+footer a {
+    color: #42d5e8;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* RESPONSIVE HP DAN TABLET */
+@media (max-width: 900px) {
+    .galeri {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        padding: 75px 15px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .galeri {
+        grid-template-columns: 1fr;
+    }
+
+    .galeri img {
+        height: 230px;
+    }
 }
