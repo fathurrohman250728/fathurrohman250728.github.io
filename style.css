@@ -174,25 +174,5 @@ footer a {
         height: 230px;
     }
 
-.daftar-tujuan {
-    max-width: 1100px;
-    margin: 30px auto;
-    padding-left: 40px;
-    text-align: left;
-}
-
-.daftar-tujuan li {
-    padding-left: 12px;
-    margin-bottom: 15px;
-    font-size: 22px;
-    line-height: 1.7;
-    color: #52627a;
-}
-
-.tujuan {
-    color: black;
-    font-weight: bold;
-    text-align: center;
-}
     
 }
