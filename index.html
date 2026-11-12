@@ -10,46 +10,68 @@
 <body>
 
 <header>
-    <h2>SEKOLAH DIGITAL</h2>
-    <nav>
+    <a href="index.html" class="logo">
+        <span class="logo-icon">SD</span>
+        <span>Sekolah Digital</span>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="navbar">
         <a href="index.html">Beranda</a>
-        <a href="pemrograman.html">Pemrograman</a>
-        <a href="prestasi.html">Prestasi</a>
         <a href="profil.html">Profil</a>
+        <a href="prestasi.html">Prestasi</a>
+        <a href="pemrograman.html">Pemrograman</a>
         <a href="fasilitas.html">Fasilitas</a>
-        <a href="pembelajaran.html">Pembelajaran</a>
-        <a href="sejarah.html">Sejarah</a>
         <a href="berita.html">Berita</a>
+        <a href="pembelajaran.html">Pembelajaran</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>SELAMAT DATANG DI</h1>
-    <h1>SEKOLAH DIGITAL</h1>
-    <p>Membangun Generasi Cerdas, Kreatif dan Berprestasi</p>
-    <a href="profil.html" class="tombol">Lihat Profil</a>
+    <div class="hero-content">
+        <h1>Selamat Datang di Sekolah Digital</h1>
+        <p>Membangun generasi cerdas, kreatif, inovatif,
+        dan siap menghadapi perkembangan teknologi.</p>
+        <a href="profil.html" class="btn">Jelajahi Sekolah</a>
+    </div>
 </section>
 
-<section class="container">
+<section class="section">
     <h2>Selamat Datang di Sekolah Digital</h2>
-    <p>
-        Sekolah Digital merupakan lingkungan pendidikan modern
-        yang mengutamakan teknologi, kreativitas, kedisiplinan,
-        dan prestasi untuk menciptakan generasi masa depan.
-    </p>
+    <p>Kami menghadirkan pendidikan modern dengan teknologi,
+    kreativitas, dan pembelajaran berkualitas.</p>
 
-    <div class="galeri">
-        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
-        <img src="https://images.unsplash.com/photo-1562774053-701939374585">
-        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5">
-        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66">
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+            <h3>Pendidikan Modern</h3>
+            <p>Belajar dengan teknologi masa kini.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+            <h3>Teknologi Digital</h3>
+            <p>Mengenal dunia teknologi dan komputer.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+            <h3>Generasi Berprestasi</h3>
+            <p>Menciptakan siswa yang kreatif dan berprestasi.</p>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 SEKOLAH DIGITAL | WhatsApp: 082253288988</p>
-    <a href="https://wa.me/6282253288988">Hubungi Kami</a>
+    <h3>SD - Sekolah Digital</h3>
+    <p>Narahubung: 082253288988</p>
+    <p>© 2026 Sekolah Digital</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
