@@ -2,44 +2,36 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berita - Sekolah Digital</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berita Sekolah Digital</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-    <h2>SEKOLAH DIGITAL</h2>
-    <nav>
-        <a href="index.html">Beranda</a>
-        <a href="pemrograman.html">Pemrograman</a>
-        <a href="prestasi.html">Prestasi</a>
-        <a href="profil.html">Profil</a>
-        <a href="fasilitas.html">Fasilitas</a>
-        <a href="pembelajaran.html">Pembelajaran</a>
-        <a href="sejarah.html">Sejarah</a>
-        <a href="berita.html">Berita</a>
-    </nav>
+<a href="index.html" class="logo"><span class="logo-icon">SD</span>Sekolah Digital</a>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<nav id="navbar">
+<a href="index.html">Beranda</a><a href="profil.html">Profil</a>
+<a href="prestasi.html">Prestasi</a><a href="pemrograman.html">Pemrograman</a>
+<a href="fasilitas.html">Fasilitas</a><a href="berita.html">Berita</a>
+<a href="pembelajaran.html">Pembelajaran</a><a href="galeri.html">Galeri</a>
+<a href="kontak.html">Kontak</a><a href="pendaftaran.html">Pendaftaran</a>
+</nav>
 </header>
-
-<section class="hero">
-    <h1>BERITA SEKOLAH</h1>
-    <p>Informasi dan Kegiatan Terbaru Sekolah Digital</p>
+<section class="hero berita-hero">
+<div class="hero-content"><h1>Berita Sekolah</h1>
+<p>Informasi dan kegiatan terbaru Sekolah Digital.</p></div>
 </section>
-
-<section class="container">
-    <h2>Berita dan Informasi</h2>
-    <p>Temukan informasi kegiatan sekolah, pengumuman,
-    perlombaan, dan berbagai aktivitas peserta didik.</p>
-
-    <div class="galeri">
-        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5">
-        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655">
-        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
-        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
-    </div>
+<section class="section">
+<h2>Berita Terbaru</h2>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655"><h3>Kegiatan Pembelajaran</h3><p>Kegiatan belajar yang interaktif dan menarik.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902"><h3>Kegiatan Kolaborasi</h3><p>Siswa belajar bekerja sama dan berinovasi.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7"><h3>Kegiatan Sekolah</h3><p>Mengembangkan kemampuan siswa.</p></div>
+</div>
 </section>
-
-<footer>© 2026 SEKOLAH DIGITAL | 082253288988</footer>
+<footer><h3>SD - Sekolah Digital</h3><p>WhatsApp: 082253288988</p></footer>
+<script src="script.js"></script>
 </body>
 </html>
