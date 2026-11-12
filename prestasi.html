@@ -2,44 +2,36 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prestasi - Sekolah Digital</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prestasi Sekolah Digital</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-    <h2>SEKOLAH DIGITAL</h2>
-    <nav>
-        <a href="index.html">Beranda</a>
-        <a href="pemrograman.html">Pemrograman</a>
-        <a href="prestasi.html">Prestasi</a>
-        <a href="profil.html">Profil</a>
-        <a href="fasilitas.html">Fasilitas</a>
-        <a href="pembelajaran.html">Pembelajaran</a>
-        <a href="sejarah.html">Sejarah</a>
-        <a href="berita.html">Berita</a>
-    </nav>
+<a href="index.html" class="logo"><span class="logo-icon">SD</span>Sekolah Digital</a>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<nav id="navbar">
+<a href="index.html">Beranda</a><a href="profil.html">Profil</a>
+<a href="prestasi.html">Prestasi</a><a href="pemrograman.html">Pemrograman</a>
+<a href="fasilitas.html">Fasilitas</a><a href="berita.html">Berita</a>
+<a href="pembelajaran.html">Pembelajaran</a><a href="galeri.html">Galeri</a>
+<a href="kontak.html">Kontak</a><a href="pendaftaran.html">Pendaftaran</a>
+</nav>
 </header>
-
-<section class="hero">
-    <h1>PRESTASI SEKOLAH</h1>
-    <p>Menciptakan Siswa yang Unggul dan Berprestasi</p>
+<section class="hero prestasi-hero">
+<div class="hero-content"><h1>Prestasi Sekolah</h1>
+<p>Menciptakan generasi yang unggul dan berprestasi.</p></div>
 </section>
-
-<section class="container">
-    <h2>Prestasi Peserta Didik</h2>
-    <p>Sekolah Digital mendukung siswa untuk meraih prestasi
-    akademik dan nonakademik melalui berbagai kegiatan lomba.</p>
-
-    <div class="galeri">
-        <img src="https://images.unsplash.com/photo-1560785496-3c9d27877182">
-        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655">
-        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5">
-        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
-    </div>
+<section class="section">
+<h2>Prestasi Siswa</h2>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94"><h3>Prestasi Akademik</h3><p>Mengembangkan kemampuan akademik siswa.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846"><h3>Prestasi Teknologi</h3><p>Kreativitas dalam bidang teknologi digital.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998"><h3>Prestasi Kompetisi</h3><p>Berpartisipasi dalam kompetisi pendidikan.</p></div>
+</div>
 </section>
-
-<footer>© 2026 SEKOLAH DIGITAL | 082253288988</footer>
+<footer><h3>SD - Sekolah Digital</h3><p>WhatsApp: 082253288988</p></footer>
+<script src="script.js"></script>
 </body>
 </html>
